@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  QuizViewController.swift
 //  Trivia Game
 //
 //  Created by Izakk Camillo on 7/20/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class QuizViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
