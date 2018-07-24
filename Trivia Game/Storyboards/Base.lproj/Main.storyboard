@@ -43,21 +43,21 @@
                                     <action selector="answer1ButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3ON-Fz-3kl"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T1F-MC-VK0">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T1F-MC-VK0">
                                 <rect key="frame" x="16" y="336" width="343" height="30"/>
                                 <state key="normal" title="Answer 2"/>
                                 <connections>
                                     <action selector="answer1ButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nsj-7N-l9Q"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DZ8-hT-j0x">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DZ8-hT-j0x">
                                 <rect key="frame" x="16" y="409" width="343" height="30"/>
                                 <state key="normal" title="Answer 3"/>
                                 <connections>
                                     <action selector="answer1ButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y3r-8w-wn7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82E-AT-cxN">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82E-AT-cxN">
                                 <rect key="frame" x="16" y="482" width="343" height="30"/>
                                 <state key="normal" title="Answer 4"/>
                                 <connections>

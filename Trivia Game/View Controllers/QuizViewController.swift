@@ -48,17 +48,39 @@ class QuizViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func showCorrectAnswerAlert() {
+        let alertController = UIAlertController(title: "Correct!", message: "\(currentQuestion.correctAnswer) is the answer. Good job!", preferredStyle: .alert)
+        
+        let alertAction = UIAlertAction(title: "Thank you!", style: .default) { action in
+            print("The alert action button was tapped")
+        }
+        
+        alertController.addAction(alertAction)
+        
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
+    func showIncorrectAnswerAlert() {
+        let alertController = UIAlertController(title: "Incorrect!", message: "\(currentQuestion.correctAnswer) was the correct answer.", preferredStyle: .alert)
+        
+        let alertAction = UIAlertAction(title: "Oh well...", style: .default) { action in
+            print("The alert action button was tapped")
+    }
+    }
+    
     func checkAnswer(selectedButtonTag: Int) {
         if selectedButtonTag == currentQuestion.correctAnswerIndex {
             //They got it right
+            showCorrectAnswerAlert()
             score += 1
         } else {
             //They got it wrong
+            showIncorrectAnswerAlert()
         }
     }
     
     @IBAction func answer1ButtonTapped(_ sender: UIButton) {
-        print(sender.tag)
+        checkAnswer(selectedButtonTag: sender.tag)
     }
     
 }
