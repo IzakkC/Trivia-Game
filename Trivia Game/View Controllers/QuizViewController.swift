@@ -36,8 +36,6 @@ class QuizViewController: UIViewController {
         }
     }
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -49,6 +47,16 @@ class QuizViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func checkAnswer(selectedButtonTag: Int) {
+        if selectedButtonTag == currentQuestion.correctAnswerIndex {
+            //They got it right
+            score += 1
+        } else {
+            //They got it wrong
+        }
+    }
+    
     @IBAction func answer1ButtonTapped(_ sender: UIButton) {
         print(sender.tag)
     }
