@@ -113,6 +113,7 @@
                         <outlet property="answer3Button" destination="DZ8-hT-j0x" id="oHR-Fl-qKi"/>
                         <outlet property="answer4Button" destination="82E-AT-cxN" id="vOO-Mh-fPh"/>
                         <outlet property="questionLabel" destination="eqC-uj-51W" id="Y7Q-Vw-qFS"/>
+                        <outlet property="resetButtonTapped" destination="Hew-i7-7nM" id="ylz-cC-ZCv"/>
                         <outlet property="scoreLabel" destination="z9h-SE-B7k" id="UJ8-Qp-FY2"/>
                     </connections>
                 </viewController>
