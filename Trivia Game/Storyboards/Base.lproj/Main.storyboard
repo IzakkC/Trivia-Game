@@ -227,8 +227,20 @@
                         <viewLayoutGuide key="safeArea" id="FEV-z2-Gdv"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add New Question" id="fyr-LT-UYT">
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="d88-kf-Vds"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="d88-kf-Vds">
+                            <connections>
+                                <action selector="saveButtonTapped:" destination="ffe-eK-ou5" id="cnj-92-6eu"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="answer1TextField" destination="p5c-gh-bXW" id="EW9-xg-0HZ"/>
+                        <outlet property="answer2TextField" destination="NMC-WB-VZB" id="YW6-Kl-6Q1"/>
+                        <outlet property="answer3TextField" destination="K65-fT-c65" id="amE-XE-cYL"/>
+                        <outlet property="answer4TextField" destination="NMC-WB-VZB" id="kPZ-vD-R4k"/>
+                        <outlet property="correctAnserSegmentedController" destination="hnA-tr-CnZ" id="eN4-MK-yEn"/>
+                        <outlet property="questionTextField" destination="GOs-F5-82o" id="a82-eR-mF9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tpv-BU-YhT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
