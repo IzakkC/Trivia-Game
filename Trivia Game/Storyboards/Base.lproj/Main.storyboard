@@ -100,7 +100,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Trivia Time" id="xf7-Dq-DTN">
-                        <barButtonItem key="leftBarButtonItem" title="Reset" id="Hew-i7-7nM"/>
+                        <barButtonItem key="leftBarButtonItem" title="Reset" id="Hew-i7-7nM">
+                            <connections>
+                                <action selector="resetButtonTapped:" destination="BYZ-38-t0r" id="BQ7-id-cn4"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Add New Question" id="RU2-AW-mkz">
                             <connections>
                                 <segue destination="ffe-eK-ou5" kind="show" id="QJ4-g1-UCe"/>
@@ -113,7 +117,6 @@
                         <outlet property="answer3Button" destination="DZ8-hT-j0x" id="oHR-Fl-qKi"/>
                         <outlet property="answer4Button" destination="82E-AT-cxN" id="vOO-Mh-fPh"/>
                         <outlet property="questionLabel" destination="eqC-uj-51W" id="Y7Q-Vw-qFS"/>
-                        <outlet property="resetButtonTapped" destination="Hew-i7-7nM" id="ylz-cC-ZCv"/>
                         <outlet property="scoreLabel" destination="z9h-SE-B7k" id="UJ8-Qp-FY2"/>
                     </connections>
                 </viewController>
@@ -254,9 +257,11 @@
                         <outlet property="answer4TextField" destination="NMC-WB-VZB" id="kPZ-vD-R4k"/>
                         <outlet property="correctAnserSegmentedController" destination="hnA-tr-CnZ" id="eN4-MK-yEn"/>
                         <outlet property="questionTextField" destination="GOs-F5-82o" id="a82-eR-mF9"/>
+                        <segue destination="Xeu-5t-dEG" kind="unwind" identifier="unwindToQuizScreen" unwindAction="unwindToQuizScreenWithSegue:" id="qLP-kA-r0h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tpv-BU-YhT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Xeu-5t-dEG" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1989.5999999999999" y="-565.27093596059115"/>
         </scene>

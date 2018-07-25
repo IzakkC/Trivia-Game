@@ -29,17 +29,18 @@ class AddNewQuestionViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        let destinationViewController = segue.destination as! QuizViewController
+        destinationViewController.questions.append(newQuestion)
+        
     }
-    */
+ 
     
     func showErrorAlert() {
         let errorAlertController = UIAlertController(title:"Error", message: "All text fields must be filled out to make a new question.", preferredStyle: .actionSheet)
@@ -77,6 +78,7 @@ class AddNewQuestionViewController: UIViewController {
         let selectedSegmentIndex = correctAnserSegmentedController.selectedSegmentIndex
         
         newQuestion = TriviaQuestion(question: questionText, answers: [firstAnswerText, secondAnswerText, thirdAnswerText, fourthAnswerText], correctAnswerIndex: selectedSegmentIndex)
+        self.performSegue(withIdentifier: "unwindToQuizScreen", sender: self)
     }
 }
 

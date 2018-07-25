@@ -136,8 +136,12 @@ class QuizViewController: UIViewController {
     @IBAction func answer1ButtonTapped(_ sender: UIButton) {
         checkAnswer(selectedButtonTag: sender.tag)
     }
-    @IBOutlet weak var resetButtonTapped: UIBarButtonItem!
-    
+    @IBAction func resetButtonTapped(_ sender: Any) {
+        resetGame()
+    }
+    @IBAction func unwindToQuizScreen(segue: UIStoryboardSegue) {
+        
+    }
 }
 
 
