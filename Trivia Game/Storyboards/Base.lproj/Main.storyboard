@@ -39,18 +39,30 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AP9-G8-IKw">
                                 <rect key="frame" x="16" y="270" width="343" height="30"/>
                                 <state key="normal" title="Answer 1"/>
+                                <connections>
+                                    <action selector="answer1ButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3ON-Fz-3kl"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T1F-MC-VK0">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T1F-MC-VK0">
                                 <rect key="frame" x="16" y="336" width="343" height="30"/>
                                 <state key="normal" title="Answer 2"/>
+                                <connections>
+                                    <action selector="answer1ButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nsj-7N-l9Q"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DZ8-hT-j0x">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DZ8-hT-j0x">
                                 <rect key="frame" x="16" y="409" width="343" height="30"/>
                                 <state key="normal" title="Answer 3"/>
+                                <connections>
+                                    <action selector="answer1ButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y3r-8w-wn7"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82E-AT-cxN">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82E-AT-cxN">
                                 <rect key="frame" x="16" y="482" width="343" height="30"/>
                                 <state key="normal" title="Answer 4"/>
+                                <connections>
+                                    <action selector="answer1ButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nuK-k0-MZ4"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z9h-SE-B7k">
                                 <rect key="frame" x="348.66666666666669" y="650" width="10.333333333333314" height="21"/>
@@ -101,6 +113,8 @@
                         <outlet property="answer3Button" destination="DZ8-hT-j0x" id="oHR-Fl-qKi"/>
                         <outlet property="answer4Button" destination="82E-AT-cxN" id="vOO-Mh-fPh"/>
                         <outlet property="questionLabel" destination="eqC-uj-51W" id="Y7Q-Vw-qFS"/>
+                        <outlet property="resetButtonTapped" destination="Hew-i7-7nM" id="ylz-cC-ZCv"/>
+                        <outlet property="scoreLabel" destination="z9h-SE-B7k" id="UJ8-Qp-FY2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
